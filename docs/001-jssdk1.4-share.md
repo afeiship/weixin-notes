@@ -26,6 +26,9 @@
 调整为：`我们将不再支持分享回调参数 success 、fail 、complete 。即开发者无法判断用户最终是否完成了分享动作，也无法获取到分享成功后的回调参数shareTicket` 。
 
 
+## Fei
+> 分享统计应该在后期会失效，现在用的是老版的接口。失效时间并不确定，需要随时关注微信官方的 release notes.
+
 ## resources
 - https://www.sunbeyond.com/3108
 - https://blog.csdn.net/u012274155/article/details/90716828
