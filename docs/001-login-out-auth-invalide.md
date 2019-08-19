@@ -33,8 +33,8 @@ Cdm +Q  Kill微信，再登录，打开网页：Cookie被清除，LocalStorage �
 
 | 存储方式                             | localStorage | cookie |
 | ------------------------------------ | ------------ | ------ |
-| 直接关掉网页，再打开                 | null         | true   |
-| 任务管理器Kill微信，再登录，打开网页 | null         | true   |
+| 直接关掉网页，再打开                 | true         | null   |
+| 任务管理器Kill微信，再登录，打开网页 | true         | null   |
 
 
 
@@ -48,7 +48,7 @@ Cdm +Q  Kill微信，再登录，打开网页：Cookie被清除，LocalStorage �
 
 | 存储方式                 | localStorage | cookie |
 | ------------------------ | ------------ | ------ |
-| 直接关掉网页，再打开     | null         | true   |
+| 直接关掉网页，再打开     | true         | null   |
 | 退出微信再登录，打开网页 | null         | null   |
 
 
@@ -65,6 +65,12 @@ Cdm +Q  Kill微信，再登录，打开网页：Cookie被清除，LocalStorage �
 | ------------------------ | ------------ | ------ |
 | 直接关掉网页，再打开     | true         | true   |
 | 退出微信再登录，打开网页 | null         | null   |
+
+
+## 结论
+- localstorage/cookie 在特定场景下，都会被清除
+- 但 localStorage 会相对更好
+- 当 localStorage 被清除的时候， Cookie 也一定被清除了
 
 
 ## resources
